@@ -1,0 +1,180 @@
+/*html, body{
+	min-width: 993px;
+}
+body{
+	
+	border: 12px solid red;
+}*/
+h3 {
+	margin-bottom:1.5em;
+}
+
+#abc{
+	border: 12px solid red;
+}
+table#preturi{
+	border-spacing:0;
+	border-collapse: collapse;
+	border: 2px solid blue;
+}
+table#preturi th{
+	color: #D9B89C;
+	background-color: #A66060;
+}
+table#preturi, table#preturi td, table#preturi th{
+	padding: 1em;
+	border: 1px solid #D9B89C;
+}
+nav#navPag{
+	width: 20%;
+}
+div#continut{
+	width: 60%;
+}
+
+ul{
+	list-style-type: circle;
+}
+/*
+iframe{
+	width: 100px;
+	height: 100px;
+	float: right;
+	border: none;
+}*/
+dt{
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1200px) {
+	/*iframe{
+		width: 70px;
+		height: 70px;
+		float: none; 
+	}*/
+	table#preturi,table#preturi tr{
+		padding:0;
+		margin:0;
+		display:block;
+	}
+	table#preturi td{
+		display: block;
+		padding:0.2em;
+		box-sizing: border-box;
+	}
+	table#preturi thead{
+		display:none;
+	}
+	table#preturi tbody td:nth-child(1)::before{
+		content:"Nume: ";
+	}
+	table#preturi tbody td:nth-child(2)::before{
+		content:"Mărimea: ";
+	}
+	table#preturi tbody td:nth-child(3)::before{
+		content:"Tipul ambalajului: ";
+	}
+	table#preturi tbody td:nth-child(4)::before{
+		content:"Descriere: ";
+	}
+	table#preturi tbody td:nth-child(5)::before{
+		content:"Preț: ";
+	}
+	table#preturi tbody td:nth-child(6)::before{
+		content:"Disponibilitate: ";
+	}
+	table#preturi td{
+		border-bottom: none;
+		border-top: none;
+		float: left;
+		width: 100%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	table#preturi td::before{
+		float:left;
+		width:35%;
+		background: #D9B89C;
+		font-weight:bold;
+		margin-right:0.5em;
+		padding:0.1em;
+		line-height:100%;
+	}
+	table#preturi td:last-child{
+		border-bottom:1px dashed #8C694A;
+	}
+	table#preturi tr:first-child  td:first-child{
+		border-top:1px solid #8C694A;
+	}
+	table#preturi tr:last-child td:last-child{
+		border-bottom:1px solid #8C694A;
+	}
+}
+@media screen and (max-width: 600px) {
+	
+	iframe{
+		width: 10%;
+		height: 10%;
+		float: none; 
+	}
+	
+	table#preturi,table#preturi tr{
+		padding:0;
+		margin:0;
+		display:block;
+	}
+	table#preturi td{
+		display:block;
+		padding:0.2em;
+		box-sizing: border-box;
+	}
+	table#preturi thead{
+		display:none;
+	}
+	table#preturi tbody td:nth-child(1)::before{
+		content:"Nume: ";
+	}
+	table#preturi tbody td:nth-child(2)::before{
+		content:"Mărimea: ";
+	}
+	table#preturi tbody td:nth-child(3)::before{
+		content:"Tipul ambalajului: ";
+	}
+	table#preturi tbody td:nth-child(4)::before{
+		content:"Descriere: ";
+	}
+	table#preturi tbody td:nth-child(5)::before{
+		content:"Preț: ";
+	}
+	table#preturi tbody td:nth-child(6)::before{
+		content:"Disponibilitate: ";
+	}
+	table#preturi td{
+		border-bottom: none;
+		border-top: none;
+		float: left;
+		width: 80%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	table#preturi td::before{
+		float:left;
+		width:35%;
+		background: #D9B89C;
+		font-weight:bold;
+		margin-right:0.5em;
+		padding:0.1em;
+		line-height:100%;
+	}
+	table#preturi td:last-child{
+		border-bottom:1px dashed grey;
+	}
+	table#preturi tr:first-child  td:first-child{
+		border-top:1px solid black;
+	}
+	table#preturi tr:last-child td:last-child{
+		border-bottom:1px solid black;
+	}
+}

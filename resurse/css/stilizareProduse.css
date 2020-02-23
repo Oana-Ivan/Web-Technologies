@@ -1,0 +1,15 @@
+div#continut{
+	padding-left: 0px;
+	transform: translateY(0px);
+}
+.cls1 {
+	padding: 5%;
+}
+img {
+	margin: 0px;
+}
+th, td {
+	border: 2px solid #8C694A;
+	padding-right: 5%;
+	padding-left: 5%;
+}

@@ -1,0 +1,65 @@
+
+
+/*Stilizare elemente din main*/
+
+section, article{
+	display: inline-block;
+}
+section:nth-of-type(even) img{
+	float: right;
+}
+section:nth-of-type(odd) img{
+	float: left;
+}
+iframe#locatie{
+	width: 200px;
+	height: 200px; 
+}
+img.separator{
+	vertical-align: center;
+	float: none;
+	margin: auto;
+	width: 30%;
+	height: 10%;
+	transition: 2s;
+}
+img.separator:hover {
+	animation-name: zboara;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}			
+@keyframes zboara{
+	0% {transform: rotate(-35deg);}
+	25% {transform: rotate(-25deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(25deg);}
+	100% { transform: rotate(35deg);}
+}
+	
+@media screen and (max-width: 992px) {
+	img{
+	width: 175px;
+	border-radius: 14px;
+	}
+	img:after{
+	float: none;
+	}
+	iframe#locatie{
+	width: 140px;
+	height: 140px; 
+}
+}
+@media screen and (max-width: 600px) {
+	img{
+	width: 125px;
+	border-radius: 10px;
+	}
+	img:after{
+	float: none;
+	}
+	iframe#locatie{
+	width: 100px;
+	height: 100px; 
+}
+}

@@ -1,0 +1,39 @@
+div#continut{
+	padding-left: 0px;
+	transform: translateY(0px);
+}
+div#zbor iframe{
+	width: 120px;
+	height: 67.5px;
+	/*animation-name: zboara;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in; */
+}/*
+@keyframes zboara{
+	0% { padding-left: 0%;}
+	50% {padding-left: 50%;}
+	100%{padding-left: 90%;}
+}*/
+.formularComanda{
+	width: 50%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #A66060;
+}
+form .trimitere{
+	background: #A66060;
+	color: white;
+}
+form .trimitere:hover{
+	background: #8C694A;
+	color: white;
+}
+p#paragrafTranslatat{
+	padding-left: 60%;
+	padding-right: 10%;
+	transform: translateY(-90%);
+}
+iframe{
+	border: none;
+}

@@ -1,0 +1,22 @@
+iframe{
+	width: 20%;
+	height: 50px;
+	padding-left: 90%;
+}
+.galerie {
+	display: flex;
+	flex-flow: row wrap;
+	width:70%;
+	border: 2px solid  #A66060;
+}
+.fig{ 
+	flex: 1 1 auto; /*1 1 15%; flex-grow, flex-shrink, flex-basis*/
+	margin: 1em;
+}
+.imgfig {
+	width: 30%; 
+	height: auto;
+}
+iframe{
+	border: none;
+}
