@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang = "ro">
+
+<head>
+	<title>Bufni&#539;a cu flori: Comand&#259; </title>
+	
+	<meta charset="UTF-8">
+	<meta name="autor" content="Oana Ivan">
+	<meta name="description" content="Formlar prin care clientii pot comanda produsele dorite"> 
+	<meta name="keywords" content="flori, aranjamente, buchete"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/jpg" href="resurse/Imagini/Imgsite/favicon_bufnita.png">
+	<link rel="stylesheet" type="text/css" href="../resurse/css/stilizareGenerala.css">
+	<link rel="stylesheet" type="text/css" href="../resurse/css/stilizareFormular.css"> 
+	<script src = "../resurse/js/formular.js"></script>
+</head>
+
+<body>
+	<%- include ("../fragmente/header.ejs")%>
+		
+	<main>
+		<h2>Formular de comand&#259; </h2> 
+		<!--<nav>
+			<h3>Con&#355;;inutul paginii</h3>
+			<ul id = "continutPagina">
+			<li><a href = "#istoric" >Despre noi</a></li>
+			<li><a href = "#servicii" >Ce v&#259; oferim</a></li>
+			<li><a href = "#evenimente">Evenimente la care particip&#259;m </a></li>
+			<li><a href = "#contact">Unde ne g&#259;si&#539i</a></li>
+			</ul>
+		</nav> 
+		-->
+		
+		<div id = "continut">
+			<div id = "zbor">
+				<iframe src="https://giphy.com/embed/KGHAMQYyf3M0aRZ4bN" allowFullScreen></iframe>
+			</div>
+			
+			<form id = "formular" method = "post" >
+				<input name = "name" type = "text" class = "formularComanda" placeholder = "Numele dvs." required> <br>
+				<input name = "email" type = "text" class = "formularComanda" placeholder = "Email-ul dvs." required> <br>
+				
+				<textarea name = "comanda" class = "formularComanda" placeHolder = "Detalii comand&#259;" rows = "4" required>
+				</textarea> 
+				
+				<input type = "submit" class = "formularComanda trimitere" value = "SEND">
+			</form>
+			
+			<p id = "paragrafTranslatat">V&#259; rug&#259;m s&#259; completa&#355;i formularul cu numele, adresa de email &#537;i detaliile comenzii dumneavoastr&#259;.</p>
+		</div>
+		
+	</main>
+	
+	<%- include ("../fragmente/footer.ejs")%>
+</body>
+
+</html>

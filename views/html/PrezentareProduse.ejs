@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang = "ro">
+
+<head>
+	<title>Bufni&#539;a cu flori: Prezentare aranjamente</title>
+	
+	<meta charset="UTF-8">
+	<meta name="autor" content="Oana Ivan">
+	<meta name="description" content="prezentarea aranjamentelor firmei"> 
+	<meta name="keywords" content="flori,florarie Bucuresti,aranjamente florare"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/jpg" href="../resurse/Imagini/Imgsite/favicon_bufnita.png">
+	<link rel="stylesheet" type="text/css" href="../resurse/css/stilizareGenerala.css">
+	<link rel="stylesheet" type="text/css" href="../resurse/css/stilizareProduse.css">
+	<script src = "../resurse/js/prezentareProduse.js"></script>
+</head>
+
+<body>
+	<%- include ("../fragmente/header.ejs")%>
+		
+	<main>
+	<h2>Prezentare aranjamente</h2> 
+	<div id = "continut">
+	
+	 <!-- <table>
+	  <tr>
+		<th>id</th><th>Nume</th><th>Descriere</th><th>Imagine</th><th>Categorie</th>
+	  </tr>
+	  <% for (var i = 0; i < aranjamente.length; i++) { %>
+		<tr>
+		  <td><%= aranjamente[i].id %></td>
+		  <td><%= aranjamente[i].nume %></td>
+		  <td><%= aranjamente[i].descriere %></td>
+		  <td><%= aranjamente[i].categorie %></td>
+		  <td><img src=<%= aranjamente[i].imagine %> alt="nu are poza"/></td>
+		</tr>    
+	  <% } %>
+	</table>
+	-->
+	<% for (var i = 0; i < aranjamente.length; i++) { 
+		console.log(aranjamente[i].id);
+		%>
+		<%- include('../fragmente/template_produse', {aranjament: aranjamente[i]}); %>
+	<% } %>
+		
+	</div>
+		
+	</main>
+	
+	<%- include ("../fragmente/footer.ejs")%>
+</body>
+
+</html>

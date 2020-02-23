@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang = "ro">
+
+<head>
+	<title>Bufni&#539;a cu flori: Inregistrare</title>
+	
+	<meta charset="UTF-8">
+	<meta name="autor" content="Oana Ivan">
+	<meta name="description" content="prezentarea firmei si a elementelor sale principale: istoric, oferte, contact"> 
+	<meta name="keywords" content="flori,florarie Bucuresti,aranjamente florare"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/jpg" href="../resurse/Imagini/Imgsite/favicon_bufnita.png">
+	<link rel="stylesheet" type="text/css" href="../resurse/css/stilizareGenerala.css">
+</head>
+
+<body>
+	<%- include ("../fragmente/header.ejs")%>
+		
+	<main>
+		
+
+		<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" class="date">
+			<p>Inregistrare utilizator<br/>
+			<p>
+			<label>
+				Username: <input type="text" name="username" value="username">
+			</label>
+			</p>
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="Nume utilizator">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="" required>
+			</label>
+			</p>
+			<p>
+			<label>
+				Reintroduceti parola: <input type="password" name="rparola" value="" required>
+			</label>
+			</p>
+			<p>		
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if (rsstatus == "ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+	</main>
+	
+	<%- include ("../fragmente/footer.ejs")%>
+</body>
+
+</html>
