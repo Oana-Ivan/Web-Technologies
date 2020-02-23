@@ -1,0 +1,29 @@
+<header>
+		<img src = "../resurse/Imagini/Imgsite/logo.png" alt = "logo" class = "logo">
+		<h1 id = "top">Bufni&#539a cu flori</h1>
+		<aside><p id = "par" class = "paragraphCenter">cu &#537i despre flori, din 2000...</p><aside>
+		
+		<% if(locals.user){ %> 
+			<p class="salut">Buna, <br/><%= user.username %></p>
+		<% } %>
+		
+		<nav id = "ceva">
+			<ul id = "meniuPrincipal">
+			<li><a href = "index">Acasa</a></li>
+			<li><a href = "PrezentareProduse">Oferta noastra</a></li>
+			<li id = "aranjamente"><a href = "Aranjamente.ejs">Aranjamente</a>
+				
+				<ul id = "subMeniuAranjamente">
+				<li><a href = "AranjamenteSarbatori">Pentru s&#259rb&#259tori</a><li>
+				<li><a href = "AranjamenteEvenimente">Pentru evenimente</a></li>
+				</ul>
+				
+			</li>
+			<li><a href = "inregistrare">Inregistrare utilizator</a></li>
+			<li><a href = "Logout">Delogare</a></li>
+			</ul>
+		</nav>
+		
+		
+	
+</header>

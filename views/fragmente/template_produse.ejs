@@ -1,0 +1,23 @@
+<article class = "<%= aranjament.categorie %>, cls1" id = "ent" + "<%=aranjament.id%>">
+	<h3><%= aranjament.nume %></h3>
+	<table>
+		<tr>
+			<th>Pret</th>
+			<th>Data recoltarii</th>
+			<th>Ambalaj</th>
+			<th>Nr de flori</th>
+			<th>Vaza</th>
+		</tr>
+		<tr>
+			
+			<td class = "pret"><%= aranjament.pret %></td>
+			<td><%= aranjament.data %></td>
+			<td class = "ambalaj"><%= aranjament.ambalaj%></td>
+			<td class = "nrFlori"><%= aranjament.continut %></td>
+			<td class = "vaza"><%= aranjament.vaza %></td>
+		</tr>
+	</table>
+	<img class = "smallImage" src = "<%= aranjament.imagine %>" alt = "imagine">
+	<p><%= aranjament.descriere %></p>
+	<p>Categorie: <%= aranjament.categorie %></p>
+</article>
