@@ -9,9 +9,9 @@ This repository contains code for a website of a fictitious flowershop. The proj
       
       - the folder "CSS" (the stylization of the pages)
       
-      - the folder "js" (the code in javascript used for exemple for the sorting application)
+      - the folder "js" (the code in javascript used for example for the sorting application)
       
-- aranjamente.json (used for displaying the producs in the "Oferta noastra" page)
+- aranjamente.json (used for displaying the products in the "Oferta noastra" page)
 - useri.json (used to retain registered users)
 - index.js (the main page)
 - app.js (the application)
@@ -20,7 +20,7 @@ This repository contains code for a website of a fictitious flowershop. The proj
 
 - Acasa (the main page where the users can login)
 
-- Oferta noastra (where the user can see the producs and filter them)
+- Oferta noastra (where the user can see the products and filter them)
 
 - Aranjamente (presentation of the principal products)
 
